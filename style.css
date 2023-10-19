@@ -1,0 +1,269 @@
+/*MAIN PAGE*/
+body{
+    background-color: white;
+    margin: 0px;
+    overflow-x: hidden;
+    font-family: 'REM', sans-serif;
+    font-weight: 200;
+}
+header{
+    background-color: rgb(153, 102, 203);
+    width: 100%;
+    height: 50px;
+    box-shadow: 1px 1px 5px black;
+}
+img{
+    width: 100%;
+}
+.ttl-font{
+    font-family: 'Kanit', sans-serif;
+    font-size: 3em;
+    font-weight: 500;
+}
+.nav{
+    display: flex;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    height: 50px;
+    justify-content: center;
+}
+.nav-item{
+    margin: auto;
+    color: white;
+}
+.nav-item:link{
+    text-decoration: none;
+    color: white;
+}
+/*MAIN*/
+.intro{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.intro .art{
+    position: absolute;
+    right: 100px;
+    width: 500px;
+    top: 25%;
+}
+.para{
+    position: absolute;
+    left: 50px;
+    width: 500px;
+}
+.text{
+    width: 500px;
+}
+.parts p{
+    max-width: 600px;
+}
+.method{
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.method h2, h3, p{
+    margin-left: 50px;
+}
+
+/*****************PAGE 1*****************/
+td{
+    margin: auto;
+    padding: 0px;
+    border-bottom: 1px solid rgb(202, 158, 247);
+}
+tr{
+    border: 1px solid black;
+}
+ul{
+    list-style: none;
+}
+table{
+    border: 1px solid rgb(161, 161, 161);
+}
+.filter{
+    display: flex;
+}
+.search-bar{
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    border: 1.5px solid rgb(161, 161, 161);
+    position: relative;
+    display: flex;
+}
+.options-dropdown{
+    width: 200px;
+    height: 45px;
+    border-radius: 30px;
+    border: 1px solid rgb(161, 161, 161);
+    position: relative;
+}
+.filter-item{
+    margin: 0px auto;
+}
+.search-bar input{
+    border: none;
+    margin: auto auto;
+    height: 80%;
+    width: 90%;
+    position: absolute;
+    left: 5px;
+    top: 0;
+    bottom: 0;
+}
+.search-bar input:focus{
+    outline: none;
+}
+.search-icon{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(153, 102, 203);
+    position: relative;
+    margin: auto auto;
+    right: 5px;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    font-size:x-small;
+    text-align: center;
+}
+.search-bar .search-icon{
+    border-radius: 15px;
+    width: 40px;
+    margin: auto 0px;
+    left: 51em;
+}
+.search-icon p{
+    z-index: 5;
+    position: absolute;
+    margin: auto auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: calc(100%/4);
+}
+.search-icon:hover{
+    cursor: pointer;
+}
+.options-dropdown select{
+    border: none;
+    width: 80%;
+    height: 80%;
+    margin: auto auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.options-dropdown select:focus{
+    outline: none;
+}
+.sort{
+    position: absolute;
+    right: -30px;
+}
+/****DATA TABLE****/
+.data{
+    width: 100%;
+    margin: auto auto;
+    margin-top: 25px;
+}
+.data table{
+    width: 80%;
+    margin: 0px auto;
+}
+.page-title{
+    text-align: center;
+}
+/*************PAGE 2***************/
+.tables{
+    min-width: fit-content;
+    min-height: fit-content;
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+.choose-tbl{
+    display: flex;
+    margin: auto auto;
+    min-width: fit-content;
+    width: 700px;
+}
+.tbl-option{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(153, 102, 203);
+    margin: auto auto;
+    text-align: center;
+    position: relative;
+}
+.tbl-option:hover{
+    background-color: rgb(202, 158, 247);
+    transition-duration: 500ms;
+    cursor: pointer;
+}
+.tbl-option p{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto auto;
+    top: calc(100%/4);
+}
+.current{
+    display: flex;
+}
+.tbl-header{
+    border-bottom: 1px solid black;
+}
+.table{
+    margin: auto;
+}
+.stats{
+    display: flex;
+    width: 100%;
+}
+.tbl-col{
+    border: 1px solid black;
+    min-width: 100px;
+    padding: auto;
+    text-align: center;
+}
+.p-f{
+    display: grid;
+    grid-column: 1/2;
+}
+.p-f div{
+    min-height: fit-content;
+}
+.tripleA{
+    display: grid;
+    grid-template-columns: 70px 70px 70px;
+    text-align: center;
+}
+.a-stat{
+    text-align: center;
+}
+.known, .likely, .potential{
+    width: 210px;
+}
+.tot-val{
+    width: 300px;
+    padding: auto;
+}
+.table6 .tbl-header{
+    height: calc(1em + 20px);
+}
+.wave-content .tbl-header{
+    min-height: 1em;
+    font-size: 12px;
+    height:fit-content;
+}

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&family=REM&display=swap" rel="stylesheet">
+        <title>Websites</title>
+    </head>
+    <body>
+        <header>
+            <a href="./index.html">
+                <div class="home"style="width:25px; height:25px; border-radius:50%; position:absolute; background-color: white; top: 10px; left: 10px;">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="" style="width: 100%;">
+                </div>
+            </a>
+            <nav class="nav">
+                <a href="./page1.html" class="nav-item" data-id="sites">Sites</a>
+                <a href="./page2.html" class="nav-item" data-id="results">Results</a>
+            </nav>
+        </header>
+        <main>
+            <div class="page-title sites-title">
+                <h1 class="ttl-font">Sites</h1>
+            </div>
+            <div class="filter">
+                <div class="search-bar filter-item">
+                    <input type="text" name="search" id="search" placeholder="search">
+                    <div class="search-icon" onclick="Search()"><p>Search</p></div>
+                </div>
+                <div class="options-dropdown filter-item">
+                    <select name="filter" id="filter">
+                        <option value="id">by id</option>
+                        <option value="name">by name</option>
+                    </select>
+                    <div class="search-icon sort" onclick="Sort()"><p>Go</p></div>
+                </div>
+            </div>
+            <div class="data">
+                <div class="table">
+                    <table>
+                        <thead></thead>
+                        <tbody>
+                            <tr class="row0 ttls" style="background-color: rgb(199, 158, 240);">
+                                <td class="col">ID</td>
+                                <td class="col">Website</td>
+                                <td class="col">AChecker A Errors</td>
+                                <td class="col">AChecker AA Errors</td>
+                                <td class="col">WAVE Errors</td>
+                            </tr>
+                            <tr class="row1 info">
+                                <td class="col1 col">1</td>
+                                <td class="col2 col">
+                                    <a href="https://www.linkedin.com/jobs">LinkedIn.com</a>
+                                </td>
+                                <td class="col3 col"><ul><li>None</li></ul></td>
+                                <td class="col4 col"><ul><li>None</li></ul></td>
+                                <td class="col5 col">
+                                    <ul>
+                                        <li>1 Spacer image missing alternative text</li>
+                                        <li>26 Language missing or invalid</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="row2 info">
+                                <td class="col1 col">2</td>
+                                <td class="col2 col">
+                                    <a href="https://www.indeed.com">Indeed.com</a>
+                                </td>
+                                <td class="col3 col"><ul><li>None</li></ul></td>
+                                <td class="col4 col"><ul><li>None</li></ul></td>
+                                <td class="col5 col"><ul><li>None</li></ul></td>
+                            </tr>
+                            <tr class="row3 info">
+                                <td class="col1 col">3</td>
+                                <td class="col2 col">
+                                    <a href="https://www.glassdoor.com">Glassdoor.com</a>
+                                </td>
+                                <td class="col3 col">
+                                    <ul>
+                                        <li>9 img missing alt attribute</li>
+                                        <li>1 Document has invalud language code</li>
+                                        <li>1 Document language not identified</li>
+                                    </ul>
+                                </td>
+                                <td class="col4 col">
+                                    <ul>
+                                        <li>9 img missing alt attribute</li>
+                                        <li>1 Document has invalud language code</li>
+                                        <li>1 Document language not identified</li>
+                                    </ul>
+                                </td>
+                                <td class="col5 col">
+                                    <ul>
+                                        <li>9 missing alternative text</li>
+                                        <li>1 Language missing or invalid</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="row4 info">
+                                <td class="col1 col">4</td>
+                                <td class="col2 col">
+                                    <a href="http://www.monster.com">Monster.com</a>
+                                </td>
+                                <td class="col3 col">
+                                    <ul>
+                                        <li>1 Document language not identified</li>
+                                        <li>1 Document has invalud language code</li>
+                                    </ul>
+                                </td>
+                                <td class="col4 col">
+                                    <ul>
+                                        <li>1 Document language not identified</li>
+                                        <li>1 Document has invalud language code</li>
+                                    </ul>
+                                </td>
+                                <td class="col5 col"><ul><li>None</li></ul></td>
+                            </tr>
+                            <tr class="row5 info">
+                                <td class="col1 col">5</td>
+                                <td class="col2 col">
+                                    <a href="http://www.careerbuilder.com">Careerbuilder.com</a>
+                                </td>
+                                <td class="col3 col"><ul><li>None</li></ul></td>
+                                <td class="col4 col"><ul><li>None</li></ul></td>
+                                <td class="col5 col"><ul><li>None</li></ul></td>
+                            </tr>
+                            <tr class="row6 info">
+                                <td class="col1 col">6</td>
+                                <td class="col2 col">
+                                    <a href="http://www.simplyhired.com">SimplyHired.com</a>
+                                </td>
+                                <td class="col3 col">
+                                    <ul>
+                                        <li>3 Label text is empty for select element</li>
+                                        <li>2 Anchor contains no text</li>
+                                    </ul>
+                                </td>
+                                <td class="col4 col">
+                                    <ul>
+                                        <li>3 Label text is empty for select element</li>
+                                        <li>2 Anchor contains no text</li>
+                                    </ul>
+                                </td>
+                                <td class="col5 col">
+                                    <ul>
+                                        <li>1 Broken ARIA reference</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="row7 info">
+                                <td class="col1 col">7</td>
+                                <td class="col2 col">
+                                    <a href="http://https://www.ziprecruiter.com/">ZipRecruiter.com</a>
+                                </td>
+                                <td class="col3 col">
+                                    <ul>
+                                        <li>8 input element, type of "text", has no text in label</li>
+                                        <li>1 input element has more than one associated label</li>
+                                        <li>8 Label text is empty</li>
+                                        <li>1 id attribute is not unique</li>
+                                    </ul>
+                                </td>
+                                <td class="col4 col">
+                                    <ul>
+                                        <li>8 input element, type of "text", has no text in label</li>
+                                        <li>1 input element has more than one associated label</li>
+                                        <li>8 Label text is empty</li>
+                                        <li>1 id attribute is not unique</li>
+                                    </ul>
+                                </td>
+                                <td class="col5 col">
+                                    <ul>
+                                        <li>1 Missing Alternative Text</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="row8 info">
+                                <td class="col1 col">8</td>
+                                <td class="col2 col">
+                                    <a href="http://www.usajobs.gov">USAJobs.com</a>
+                                </td>
+                                <td class="col3 col"><ul><li>None</li></ul></td>
+                                <td class="col4 col"><ul><li>None</li></ul></td>
+                                <td class="col5 col">
+                                    <ul>
+                                        <li>1 Broken ARIA reference</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="row9 info">
+                                <td class="col1 col">9</td>
+                                <td class="col2 col">
+                                    <a href="http://www.snagajob.com">SnagAJob.com</a>
+                                </td>
+                                <td class="col3 col">
+                                    <ul>
+                                        <li>1 input element, type of "text", has no text in label</li>
+                                        <li>3 Anchor contains no text</li>
+                                        <li>2 Label text is empty</li>
+                                        <li>1 id attribute</li>
+                                    </ul>
+                                </td>
+                                <td class="col4 col">
+                                    <ul>
+                                        <li>1 input element, type of "text", has no text in label</li>
+                                        <li>3 Anchor contains no text</li>
+                                        <li>2 Label text is empty</li>
+                                        <li>1 id attribute</li>
+                                    </ul>
+                                </td>
+                                <td class="col5 col">
+                                    <ul>
+                                        <li>5 Broken ARIA Reference</li>
+                                        <li>3 Broken ARIA Menu</li>
+                                        <li>3 Empty link</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="row10 info">
+                                <td class="col1 col">10</td>
+                                <td class="col2 col">
+                                    <a href="http://www.dice.com">Dice.com</a>
+                                </td>
+                                <td class="col3 col">
+                                    <ul><li>1 img element missing alt attribute</li></ul>
+                                </td>
+                                <td class="col4 col">
+                                    <ul><li>1 img element missing alt attribute</li></ul>
+                                </td>
+                                <td class="col5 col">
+                                    <ul>
+                                        <li>1 Missing alternative text</li>
+                                        <li>1 Empty heading</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="row11 info">
+                                <td class="col1 col">11</td>
+                                <td class="col2 col">
+                                    <a href="http://www.flexjobs.com">FlexJobs.com</a>
+                                </td>
+                                <td class="col3 col">
+                                    <ul><li>1 img element missing alt attribute</li></ul>
+                                </td>
+                                <td class="col4 col">
+                                    <ul>
+                                        <li>1 img element missing alt attribute</li>
+                                        <li>1 The contrast between the color of text and its background
+                                        <br> for the element is not sufficient to meet WCAG2.0 Level AA</li>
+                                        <li>1 i (italic) element is used</li>
+                                    </ul>
+                                </td>
+                                <td class="col5 col">
+                                    <ul>
+                                        <li>7 Missing alternative text</li>
+                                        <li>7 Missing form label</li>
+                                        <li>1 Empty heading</li>
+                                        <li>2 Empty link</li>
+                                        <li>1 Broken ARIA reference</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="row12 info">
+                                <td class="col1 col">12</td>
+                                <td class="col2 col">
+                                    <a href="http://www.angel.co">Angel.co</a>
+                                </td>
+                                <td class="col3 col">
+                                    <ul>
+                                        <li>1 image used as achor is missing valid Alt text</li>
+                                        <li>4 Anchor contains no text</li>
+                                        <li>1 Label text is empty</li>
+                                    </ul>
+                                </td>
+                                <td class="col4 col">
+                                    <ul>
+                                        <li>1 Image used as an anchor is missing valid Alt text</li>
+                                        <li>4 Anchor contains no text</li>
+                                        <li>1 Lable text is missing</li>
+                                        <li>1 Header nesting - header is following h1 is incorrect</li>
+                                    </ul>
+                                </td>
+                                <td class="col5 col">
+                                    <ul>
+                                        <li>1 Missing form label</li>
+                                        <li>1 Linked image missing alternative text</li>
+                                        <li>2 Empty link</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="row13 info">
+                                <td class="col1 col">13</td>
+                                <td class="col2 col">
+                                    <a href="http://www.idealist.org">Idealist.org</a>
+                                </td>
+                                <td class="col3 col">
+                                    <ul>
+                                        <li>3 select element missing an ssociated label</li>
+                                        <li>2 Anchor contains no text</li>
+                                        <li>1 input element has more than one associated label</li>
+                                        <li>1 id attribute is not unique</li>
+                                    </ul>
+                                </td>
+                                <td class="col4 col">
+                                    <ul>
+                                        <li>3 select elemnt missing an associated label</li>
+                                        <li>2 Anchor contains no text</li>
+                                        <li>1 Header nesting - header is following h1 is incorrect</li>
+                                        <li>4 Header nesting - header is following h2 is incorrect</li>
+                                        <li>1 Header nesting - header is following h3 is incorrect</li>
+                                        <li>1 input element has more than one associated label</li>
+                                        <li>1 id attribute is not unique</li>
+                                    </ul>
+                                </td>
+                                <td class="col5 col">
+                                    <ul>
+                                        <li>4 Multiple form labels</li>
+                                        <li>4 Empty form label</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr class="row14 info">
+                                <td class="col1 col">14</td>
+                                <td class="col2 col">
+                                    <a href="http://www.careerjet.com">CareerJet.com</a>
+                                </td>
+                                <td class="col3 col"><ul><li>None</li></ul></td>
+                                <td class="col4 col"><ul><li>None</li></ul></td>
+                                <td class="col5 col"><ul><li>None</li></ul></td>
+                            </tr>
+                            <tr class="row15 info">
+                                <td class="col1 col">15</td>
+                                <td class="col2 col">
+                                    <a href="https://www.apps.joinhandshake.com/stu">Handshake.com</a>
+                                </td>
+                                <td class="col3 col"><ul><li>None</li></ul></td>
+                                <td class="col4 col"><ul><li>None</li></ul></td>
+                                <td class="col5 col"><ul><li>None</li></ul></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <script src="./index.js"></script>
+        </main>
+    </body>
+</html>
