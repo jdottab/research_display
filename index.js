@@ -130,6 +130,5 @@ selectors.forEach(e =>{
         sections[i].classList.add('current')
       }
     }
-    console.log('click')
   })
 })
